@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="tang-sach.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" /><!--Thư viện biểu tượng icon -->
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script><!--Thư viện biểu tượng icon -->
+    <title>Donate Books</title>
+</head>
+<body>
+  
+  <div>
+    <nav class="navbar navbar-expand-md navbar-light  scroll">
+  <div class="container-fluid">
+    <a class="navbar-branch" href="#">
+      <i class="fas fa-book-open fa-2x"></i>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+      data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav  ml-auto">
+        <li class="nav-item">
+          <a class="btn " href="trangchutv.html">
+           <span><ion-icon name="home"></ion-icon></span> Trang chủ
+          </a>
+        </li>
+        <li class="nav-item">
+            <div class="dropdown">
+                    <a class="btn" href="web_quan_ly_sach.html">
+                        <span><ion-icon name="book"></ion-icon></span> Sách
+                    </a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="dropdown">
+                    <a class="btn  dropdown-toggle" data-toggle="dropdown">
+                        <span><ion-icon name="school"></ion-icon></span> Người đọc
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="profile.html">Thông tin cá nhân</a>
+                        <a class="dropdown-item" href="hoatdongchung.html">Hoạt động chung</a>
+                    </div>
+            </div>
+        </li>
+        <li class="nav-item">
+          <a class="btn " href="nhanvien1.html">
+           <span><ion-icon name="contacts"></ion-icon></span> Nhân viên
+          </a>
+        </li>
+        <li class="nav-item">
+            <div class="dropdown">
+                    <a class="btn dropdown-toggle" data-toggle="dropdown">
+                        <span><ion-icon name="filing"></ion-icon></span> Xem thêm 
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="tang-sach.html">Đóng góp</a>
+                    </div>
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="dropdown">
+                    <a class="btn  dropdown-toggle" data-toggle="dropdown">
+                        <span><ion-icon name="person"></ion-icon></span> Tài khoản 
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="login.html">Đăng nhập</a>
+                        <a class="dropdown-item" href="register.html">Đăng ký</a>
+                    </div>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  </div>
+    <div class="home"></div>
+    <div class="container">
+        <h2 style="text-align: center; margin-top: 5%; padding: 10px 0 10px 0; color: chocolate;">DONATE BOOKS</h2>
+        <div class="card card-custom">
+            <div class="card-body">
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="nhap2">Họ</label>
+              <input type="text" class="form-control" id="nhap2" placeholder="Họ">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="nhap">Tên</label>
+              <input type="text" class="form-control" id="nhap" placeholder="Tên">
+            </div>
+          </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="nhap2">Email</label>
+            <input type="email" class="form-control" id="nhap2" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="nhap">Liên Hệ</label>
+            <input type="text" class="form-control" id="nhap" placeholder="Liên Hệ">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="diachi">Địa Chỉ</label>
+          <input type="text" class="form-control" id="diachi" placeholder="Địa Chỉ">
+        </div>
+        <div class="form-group">
+          <label for="diachi2">Khu vực</label>
+          <input type="text" class="form-control" id="diachi2" placeholder="Khu vực">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="loinhan">Lời Nhắn</label>
+            <input type="text" class="form-control" id="loinhan">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="luachon">Thể Loại</label>
+            <select id="luachon" class="form-control">
+              <option selected>Lựa Chọn...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="ma">Mã Bưu Điện</label>
+            <input type="text" class="form-control" id="ma">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="kiemtra">
+            <label class="form-check-label" for="kiemtra">
+              Đồng ý với các điều khoản và điều kiện
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Gửi Tặng</button>
+        <button type="submit" class="btn btn-primary"><a style="text-decoration: none; color: white;" href="trangchutv.html">Trở Lại Trang Chủ</a></button>
+      </form>
+    </div>
+</div>
+<br><br><br>
+</div>
+    <div class="footer">
+      <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>Thư viện GTVT là một trong những thư viện hàng đầu ở thành phố Hà Nội, với đầy đủ các tiêu chí, cơ sở vật chất hiện đại.</p>
+            <p>Bản quyền thuộc về Thư viện Đại học Giao Thông Vận Tải</p>
+            <div class="social">
+              <a href="#"><span style="color: white;" class="fab fa-facebook-f"></span></a>
+              <a href="#"><span style="color: white;" class="fab fa-twitter"></span></a>
+              <a href="#"><span style="color: white;" class="fab fa-instagram"></span></a>
+              <a href="#"><span style="color: white;" class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Số 3 Cầu Giấy, Đống Đa, Hà Nội</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+84xxxx5678</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">abc@utc.edu.com.vn</span>
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+          <h2>Contact us</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email</div>
+                <input style="color: white;" type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message</div>
+                <textarea style="color: white; " rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <input style="color: white;" type="submit" value="Send">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

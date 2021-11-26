@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" >
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  
+</head>
+
+<body>
+
+<div class="">
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-branch" href="#">
+                <i class="fas fa-book-open fa-2x"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="btn " href="trangchutv.html"><span><ion-icon name="home"></ion-icon></span>Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn" href="web_quan_ly_sach.html">
+                                <span><ion-icon name="book"></ion-icon></span> Sách
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown">
+                                <span><ion-icon name="school"></ion-icon></span> Người đọc
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="profile.html">Thông tin cá nhân</a>
+                                <a class="dropdown-item" href="hoatdongchung.html">Hoạt động chung</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn " href="nhanvien1.html">
+                            <span><ion-icon name="contacts"></ion-icon></span> Nhân viên
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown">
+                                <span><ion-icon name="filing"></ion-icon></span> Xem thêm 
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="tang-sach.html">Đóng góp</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn  dropdown-toggle" data-toggle="dropdown">
+                                <span><ion-icon name="person"></ion-icon></span> Tài khoản 
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="login.html">Đăng nhập</a>
+                                <a class="dropdown-item" href="register.html">Đăng ký</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    <div class="row">
+        <!--Phần bên trái-->
+        <div class="col-lg-4">
+            <div class="profile-card shad">
+                <!--Phần thẻ-->
+                <div class="card">
+                    <!--Thẻ cá nhân-->
+                    <div class="card-body bg-primary rounded-top">
+                        <!--IMG-->                        
+                        <div class="user-box">
+                            <img src="images/profilepicture.jpg">
+                        </div>
+                        <!--Tên, nghề nghiệp-->
+                        <h5 class="mb-1">Lê Văn Long</h5>
+                        <h6>Sinh viên CNTT</h6>
+                    </div>
+                    <!--Liên hệ + Bên lề-->
+                    <div class="card-body">
+                        <!--Liên hệ-->                       
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="list-icon">
+                                    <i class="fa fa-phone-square"></i>
+                                </div>
+                                <div class="list-details">
+                                    <span>0123456789</span>
+                                    <small>Điện thoại liên hệ</small>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="list-icon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="list-details">
+                                    <span>toilatoi@gmail.com</span>
+                                    <small>Địa chỉ Email</small>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="list-icon">
+                                    <i class="fa fa-globe"></i>
+                                </div>
+                                <div class="list-details">
+                                    <span>www.thuvien.com</span>
+                                    <small>Website</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--icon bên dưới-->
+                    <div class="card-footer">
+                        <a href="#" class="m-1"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="m-1"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" class="m-1"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="m-1"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Phần bên phải-->
+        <div class="col-lg-8">
+            <div class="card shad">    
+                <div class="card-body">
+                    <!--thanh nav -->
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="nav-item">
+                            <a href="#thongtin" data-toggle="pill" class="nav-link active"><span>Thông Tin</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#muontra" data-toggle="pill" class="nav-link"><span>Mượn trả</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#chinhsua" data-toggle="pill" class="nav-link"><span>Chỉnh sửa</span></a>
+                        </li>
+                    </ul>
+                    <!--phần content-->
+                    <div class="tab-content mt-2 p-3">
+                        <!--tab thứ nhất-->
+                        <div class="tab-pane active" id="thongtin">
+                            <h4 class="mb-3">Hồ sơ cá nhân</h4>
+                            <div class="row">
+                                <!--thông tin chính -->
+                                <div class="col-md-6">
+                                    <h6>Sơ lược </h6>
+                                    <p>Sinh viên CNTT, trường đại học GTVT.</p>
+                                    <h6>Sở thích</h6>
+                                    <p>Quẩy nhạc, ngủ nướng, học lập trình.</p>
+                                </div>
+                                <!--Huy hiệu-->
+                                <div class="col-md-6">
+                                    <h6>Huy hiệu</h6>
+                                    <a href="#" class="badge badge-primary badge-pill">Học bá</a>
+                                    <a href="#" class="badge badge-warning badge-pill">Bác học</a>
+                                    <a href="#" class="badge badge-light badge-pill">Nhà thơ</a>
+                                    <a href="#" class="badge badge-success badge-pill">Nhà văn</a>
+                                    <a href="#" class="badge badge-danger badge-pill">Coder</a>
+                                    <a href="#" class="badge badge-info badge-pill">Đẹp trai</a>
+                                    <a href="#" class="badge badge-secondary badge-pill">Tỏa sáng</a>
+                                    <a href="#" class="badge badge-dark badge-pill">Gác cửa</a>
+                                </div>
+                                <!--sách vừa đọc -->
+                                <div class="col-md-12 recent-books">
+                                    <h5 class="mt-3 mb-3"><span class="fa fa-clock-o ion-clock"></span>Sách vừa đọc</h5>
+                                    <table class="table table-hover">
+                                        <tbody>                                    
+                                            <tr>
+                                                <td>
+                                                    <strong>Long</strong> đã đọc cuốn <a href="chi_tiet_mot_quyen.html">Tìm hiểu về công nghệ thông tin</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Long</strong> đã đọc cuốn <a href="chi_tiet_mot_quyen.html">Liệu IT đã hết thời ?</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Long</strong> đã đọc cuốn <a href="chi_tiet_mot_quyen.html">Tiếng anh chuyên ngành công nghệ thông tin</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Long</strong> đã đọc cuốn <a href="chi_tiet_mot_quyen.html">Code dạo ký sự</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>Long</strong> đã đọc cuốn <a href="chi_tiet_mot_quyen.html">Hacker lược sử</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!--tab thứ hai-->
+                        <div class="tab-pane fade" id="muontra">
+                            <table class="table table-hover">
+                                <tbody>                                    
+                                    <tr>
+                                        <td>
+                                            <strong>Long</strong> đã trả <a href="chi_tiet_mot_quyen.html">Tìm hiểu về công nghệ thông tin</a>
+                                        </td>
+                                        <td>
+                                            <span>3 hrs ago</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Long</strong> đã mượn <a href="chi_tiet_mot_quyen.html">Tìm hiểu về công nghệ thông tin</a>
+                                        </td>
+                                        <td>
+                                            <span>Yesterday</span>
+                                        </td>                                       
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Long</strong> đã trả <a href="chi_tiet_mot_quyen.html">Liệu IT đã hết thời ?</a>
+                                        </td>
+                                        <td>
+                                            <span>3 hrs ago</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Long</strong> đã mượn <a href="chi_tiet_mot_quyen.html">Liệu IT đã hết thời ?</a>
+                                        </td>
+                                        <td>
+                                            <span>Yesterday</span>
+                                        </td>  
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Long</strong> đã trả <a href="chi_tiet_mot_quyen.html">Tiếng anh chuyên ngành công nghệ thông tin</a>
+                                        </td>
+                                        <td>
+                                            <span>3 hrs ago</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Long</strong> đã mượn <a href="chi_tiet_mot_quyen.html">Tiếng anh chuyên ngành công nghệ thông tin</a>
+                                        </td>
+                                        <td>
+                                            <span>Yesterday</span>
+                                        </td>  
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Long</strong> đã trả <a href="chi_tiet_mot_quyen.html">Code dạo ký sự</a>
+                                        </td>
+                                        <td>
+                                            <span>3 hrs ago</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Long</strong> đã mượn <a href="chi_tiet_mot_quyen.html">Code dạo ký sự</a>
+                                        </td>
+                                        <td>
+                                            <span>Yesterday</span>
+                                        </td>  
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Long</strong> đã trả <a href="chi_tiet_mot_quyen.html">Hacker lược sử</a>
+                                        </td>
+                                        <td>
+                                            <span>3 hrs ago</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Long</strong> đã mượn <a href="chi_tiet_mot_quyen.html">Hacker lược sử</a>
+                                        </td>
+                                        <td>
+                                            <span>Yesterday</span>
+                                        </td>  
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Long</strong> đã trả <a href="chi_tiet_mot_quyen.html">Giới thiệu luật công nghệ thông tin</a>
+                                        </td>                                        
+                                        <td>
+                                            <span>3 hrs ago</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Long</strong> đã mượn <a href="chi_tiet_mot_quyen.html">Giới thiệu luật công nghệ thông tin</a>
+                                        </td>
+                                        <td>
+                                            <span>Yesterday</span>
+                                        </td>  
+                                    </tr>
+                                </tbody> 
+                            </table>
+                        </div>
+                        <!--tab thứ ba-->
+                        <div class="tab-pane fade" id="chinhsua">
+                            <form>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Tên</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="text" value="Văn Long">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Họ</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="text" value="Lê">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Email</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="email" value="toilaai123@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Ảnh cá nhân</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="file">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Website</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="url" value="youtube.com">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Địa chỉ</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="text" value="Trường đại học GTVT">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Tài khoản</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="text" value="levanlong1666">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Mật khẩu</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="password" value="toilaai123">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Xác nhận mật khẩu</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="password" value="toilaai123">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label"></label>
+                                    <div class="col-lg-9">
+                                        <input type="reset" class="btn btn-secondary" value="Hủy bỏ">
+                                        <input type="button" class="btn btn-primary" value="Lưu">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="main-content">
+        <div class="left box">
+            <h2>About us</h2>
+            <div class="content">
+                <p>Thư viện GTVT là một trong những thư viện hàng đầu ở thành phố Hà Nội, với đầy đủ các tiêu chí, cơ sở vật chất hiện đại.</p>
+                <p>Bản quyền thuộc về Thư viện Đại học Giao Thông Vận Tải</p>
+                <div class="social">
+                    <a href="#"><span style="color: white;" class="fab fa-facebook-f"></span></a>
+                    <a href="#"><span style="color: white;" class="fab fa-twitter"></span></a>
+                    <a href="#"><span style="color: white;" class="fab fa-instagram"></span></a>
+                    <a href="#"><span style="color: white;" class="fab fa-youtube"></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center box">
+            <h2>Address</h2>
+            <div class="content">
+                <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">Số 3 Cầu Giấy, Đống Đa, Hà Nội</span>
+                </div>
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+84xxxx5678</span>
+                </div>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">abc@utc.edu.com.vn</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="right box">
+            <h2>Contact us</h2>
+            <div class="content">
+                <form action="#">
+                    <div class="email">
+                        <div class="text">Email</div>
+                        <input style="color: white;" type="email" required>
+                    </div>
+                    <div class="msg">
+                        <div class="text">Message</div>
+                        <textarea style="color: white; " rows="2" cols="25" required></textarea>
+                    </div>
+                    <div class="btn">
+                        <input style="color: white;" type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

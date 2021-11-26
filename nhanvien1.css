@@ -1,0 +1,351 @@
+.navbar {
+  background-color: #2D87E7 !important;
+  font-family: Book Antiqua;
+}
+a.navbar-branch i{
+  color: white;
+}
+a.navbar-branch i:hover{
+  color: #095C09;
+}
+.navbar li a,.dropdown-menu {
+    color: white !important;
+    background-color: #2D87E7 !important;
+}
+.navbar li a:hover{
+    color: #095C09 !important;
+    background-color: transparent !important;
+}
+.show > .btn.dropdown-toggle{
+  color: #095C09 !important;
+    background-color: transparent !important;
+}
+/*Media query*/ 
+ @media screen and (max-width: 804px ){
+    .navbar li a{
+      font-size: 14px;
+    }  
+}
+@media screen and (max-width: 767px ){
+    .navbar li a{
+      font-size: 16px;
+    }  
+}
+
+button{
+    margin: .5rem;
+}
+
+.cards{
+    margin: 1rem;
+    padding: 0%;
+
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+  background: #8e44ad;
+  color: #fff;
+}
+.all {
+  background: #B6C6FF;
+}
+.abc{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  margin-bottom: 0;
+}
+.container{
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.container .box{
+  width: calc(33% - 10px);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+.container .box .image{
+  margin: 10px 0;
+  height: 150px;
+  width: 150px;
+  background: #8e44ad;
+  padding: 3px;
+  border-radius: 50%;
+}
+.box .image img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.box p{
+  text-align: justify;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.box .name_job{
+  margin: 10px 0 3px 0;
+  color: #8e44ad;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btns{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.btns button{
+  background: #8e44ad;
+  width: 100%;
+  padding: 9px 0px;
+  outline: none;
+  border: 2px solid #8e44ad;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  color: #8e44ad;
+  transition: all 0.3s linear;
+}
+.btns button:first-child{
+  background: none;
+  margin-right: 5px;
+}
+.btns button:last-child{
+  color: #fff;
+  margin-left: 5px;
+}
+.btns button:first-child:hover{
+  background: #8e44ad;
+  color: #fff;
+}
+.btns button:hover{
+  color: #fff;
+}
+.job{
+  font-size: 20px;
+  color: #FF676D;
+}
+@media (max-width:1045px){
+  .container .box{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+@media (max-width:710px){
+  .container .box{
+    width: 100%;
+  }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+ 
+}
+footer{
+  color: white;
+  position: scroll;
+  bottom: 0px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+footer p, footer span, footer div{
+
+    font-size: 18px;
+}
+
+
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #363535;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #1986F5;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #363535;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #1986F5;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color:  white;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #363535;
+  padding-left: 10px;
+  border: 1px solid #363535;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+  width: 100%;
+}
+.right form .btn{
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  margin-left: 0px;
+
+}
+.right form .btn input{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #363535;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn input:hover{
+  background: #1986F5;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+
+section {
+    min-height: 100vh;
+    margin-top: -70px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.about .anh{
+    flex:1 1 40rem;
+}
+
+.about .anh img{
+    height:65vh;
+    width:100%;
+}
+
+.about .gioithieu{
+    flex:1 1 40rem;
+}
+
+.about .gioithieu h3{
+    font-size: 3.5rem;
+    color:#666;
+}
+
+.about .gioithieu p{
+    font-size: 1.5rem;
+    color:#666;
+    padding:1rem 0;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+	<title>Đăng nhập</title>
+</head>
+
+<body>
+	<div class="container">
+		<form action="#" class="login" id="form-1" name="valid">
+			<h2 style="font-family: Arial;" class="title">Đăng nhập</h2>
+			<div class="form-group">
+				<label for="email">Địa chỉ Email</label>
+				<div class="input-group">
+					<input type="email" id="email" class="email" name="email" placeholder="abc123@xxx.com">
+					<i class='bx bx-envelope'></i>
+				</div>
+				<div class="help-text">
+					<span></span>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="password">Mật khẩu</label>
+				<div class="input-group">
+					<input type="password" id="password" class="password" name="password" placeholder="********">
+					<i class='bx bx-lock-alt' ></i>
+				</div>
+				<div class="help-text">
+					<span></span>
+				</div>
+			</div>
+			<button style="font-family: Calibri; font-size:18px;" type="button" class="btn-submit" onclick="validateForm(document.forms.valid)">Đăng nhập</button>
+			<a href="#">Quên mật khẩu?</a>
+			<p>Chưa có tài khoản ?! <a href="register.html" target="_self">Đăng ký</a></p>
+		</form>
+	</div>
+
+	<script src="login.js"></script>
+</body>
+</html>

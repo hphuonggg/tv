@@ -1,0 +1,754 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web-sach-nhom-13</title>
+	<!-- Import Boostrap css, js, font awesome here -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" >
+    <!-- Import Boostrap css, js -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> 
+    
+	<link href="web_quan_ly_sach.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class=" navbar navbar-expand-md navbar-light bg-light">
+		  <div class="container-fluid">
+		    <a class="navbar-branch" href="#">
+		      <i class="fas fa-book-open fa-2x"></i>
+		    </a>
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+		      data-target="#navbarResponsive">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarResponsive">
+		      <ul class="navbar-nav  ml-auto">
+		        <li class="nav-item">
+		          <a class="btn" href="trangchutv.html">
+		           <span><ion-icon name="home"></ion-icon></span>
+		           Trang chủ
+		          </a>
+		        </li>
+		         <li class="nav-item">
+		          <a class="btn" href="trangchutv.html">
+		           <span><ion-icon name="book"></ion-icon></span>
+		            Sách
+		          </a>
+		        </li>
+		        <li class="nav-item">
+		            <div class="dropdown">
+		                    <a class="btn dropdown-toggle" data-toggle="dropdown">
+		                        <span><ion-icon name="school"></ion-icon></span> Người đọc
+		                    </a>
+		                    <div class="dropdown-menu">
+		                        <a class="dropdown-item" href="profile.html">Thông tin cá nhân</a>
+		                        <a class="dropdown-item" href="hoatdongchung.html">Hoạt động chung</a>
+		                    </div>
+		            </div>
+		        </li>
+		        <li class="nav-item">
+		          <a class="btn " href="nhanvien1.html">
+		           <span><ion-icon name="contacts"></ion-icon></span> Nhân viên
+		          </a>
+		        </li>
+		        <li class="nav-item">
+		            <div class="dropdown">
+		                    <a class="btn dropdown-toggle" data-toggle="dropdown">
+		                        <span><ion-icon name="filing"></ion-icon></span> Xem thêm 
+		                    </a>
+		                    <div class="dropdown-menu">
+		                        <a class="dropdown-item" href="tang-sach.html">Đóng góp</a>
+		                    </div>
+		            </div>
+		        </li>
+		        <li class="nav-item">
+		            <div class="dropdown">
+		                    <a class="btn dropdown-toggle" data-toggle="dropdown">
+		                        <span><ion-icon name="person"></ion-icon></span> Tài khoản 
+		                    </a>
+		                    <div class="dropdown-menu">
+		                        <a class="dropdown-item" href="login.html">Đăng nhập</a>
+		                        <a class="dropdown-item" href="register.html">Đăng ký</a>
+		                    </div>
+		            </div>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>	
+	</header>
+<!-- /header -->
+
+<!-- Carousel -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators" style=" color:blue;">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1"></li>
+		<li data-target="#slides" data-slide-to="2"></li>		
+		<li data-target="#slides" data-slide-to="3"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="./img_quanlysach/banner01.png" >
+		</div>
+		<div class="carousel-item ">
+			<img src="./img_quanlysach/banner04.png" >
+		</div>
+		<div class="carousel-item">
+			<img src="./img_quanlysach/banner05.png" >
+		</div>
+		<div class="carousel-item">
+			<img src="./img_quanlysach/06.png"  >
+		</div>
+	</div>
+</div>
+	
+</div>
+<br><br>
+<div class="contaniner">
+	<h1 class="title">Danh sách các sách theo chuyên ngành</h1>
+			<ul class="tab">
+				<li class="tab-item active"   onclick="changeproductlist('trend-1',this)">Khoa Công nghệ thông tin</li>
+				<li class="tab-item" onclick="changeproductlist('trend-2',this)">Khoa Cơ khí</li>
+				<li class="tab-item" onclick="changeproductlist('trend-3',this)">Khoa Kinh tế</li>
+				<li class="tab-item" onclick="changeproductlist('trend-4',this)">Khoa Luật</li>
+				<li class="tab-item" onclick="changeproductlist('trend-5',this)">Khoa Quản trị nhân sự</li>
+			</ul>
+		
+
+	<div id="trend-1" class="animation">
+		<ul class="product-list">
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="chi_tiet_mot_quyen.html"><img src="./img_quanlysach/1.jpg" alt="">
+					</a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Tiếng anh chuyên ngành công nghệ thông tin</a>
+						</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="chi_tiet_mot_quyen.html">
+						<img src="./img_quanlysach/2.jpg" alt="">
+					</a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Code dạo ký sự</a>
+						</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="">
+						<img src="./img_quanlysach/3.jpg" alt="">
+					</a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Tìm hiểu về ngành công nghệ thông tin</a>
+						</div>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="#" title=""><img src="./img_quanlysach/4.jpg" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Liệu IT đã hết thời ?</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="chi_tiet_mot_quyen.html" title="">
+						<img src="./img_quanlysach/5.jpg" alt="">
+					</a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Lập trình java căn bản</a>
+						</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title=""><img src="./img_quanlysach/6.jpg" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Hacker lược sử</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title=""><img src="./img_quanlysach/7.jpg" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Giới thiệu luật công nghệ thông tin</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title=""><img src="./img_quanlysach/29.jpg" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Phân tích thiết kế giải thuật</a>
+					</div>
+					
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="trend-2" class="animation">
+		<ul class="product-list">
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title=""><img src="./img_quanlysach/8.jpg" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Sổ tay gia công CNC</a>
+					</div>
+					
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title=""><img src="./img_quanlysach/9.jpg" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Chuyên ngành kỹ thuật ô tô và xe máy hiện đại</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title=""><img src="./img_quanlysach/10.jpg" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Cơ khí đại cương</a>
+					</div>
+					
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title=""><img src="./img_quanlysach/11.jpg" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Mechanical Engineering</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title=""><img src="./img_quanlysach/12.jpg" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Chuyên ngành cơ khí</a>
+					</div>
+					
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title=""><img src="./img_quanlysach/28.jpg" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Lắp đặt, vận hành và sửa chữa hệ thống lạnh</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title=""><img src="./img_quanlysach/31.jpg" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Giáo trình điều hòa không khí</a>
+					</div>
+					
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title=""><img src="./img_quanlysach/32.jpg" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Điện trong kỹ thuật lạnh</a>
+					</div>
+					
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="trend-3" class="animation">
+		<ul class="product-list">
+			
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/13.jpg" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Kế toán tài chính</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/14.jpg" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Kinh tế học cấm đoán</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/15.jpg" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Giáo trình kinh tế học phát triển</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/16.jpg" alt="">
+					</a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Lời thú tội mới của một sát thủ kinh tế</a>
+					</div>
+						
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/17.jpg" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Giáo trình kinh tế đối ngoại</a>
+					</div>
+						
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/18.jpg" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Từ điển kinh tế học</a>
+					</div>
+
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/44.png" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Kinh tế học vĩ mô</a>
+					</div>
+
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/45.png" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Giáo trình kinh tế và quản lý môi trường</a>
+					</div>
+
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="trend-4" class="animation">
+		<ul class="product-list">
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/19.jpg" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Câu truyện môi trường</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/20.jpg" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Luật bảo vệ môi trường</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/21.jpg" alt=""></a><div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Luật bảo vệ môi trường 2020</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/22.jpg" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">What a waste(Kiểm soát rác thải và bảo vệ môi trường)</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/35.png" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Đại cương nhà nước và pháp luật</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/36.png" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Trí tuệ nhân tạo với pháp luật và quyền con người</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/33.png" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Cẩm nang pháp luật dành cho doanh nghiệp</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/43.png" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Chính sách pháp luật những vấn đề lý luận và thực tiễn</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="trend-5" class="animation">
+		<ul class="product-list">
+			
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title=""><img src="./img_quanlysach/23.jpg" alt="">
+					</a><div class="infor">
+							<a href="chi_tiet_mot_quyen.html">The book of leadership</a>
+						</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title=""><img src="./img_quanlysach/24.jpg" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Quản trị chất lượng</a>
+						</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product">
+					<a href="" title=""><img src="./img_quanlysach/27.jpg" alt="">
+					</a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Những tư tưởng hàng đầu về quản lý</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title=""><img src="./img_quanlysach/26.jpg" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Công cụ quản lý nhân sự hiệu quả</a>
+						</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/41.png" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Giáo trình phát triển nguồn lực</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/42.png" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Giáo trình quản trị nhân lực</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/39.png" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Quản trị nguồn nhân lực khách sạn</a>
+					</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="" title="">
+						<img src="./img_quanlysach/34.png" alt=""></a>
+						<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Nghệ thuật quản lý nhân sự</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="contaniner">
+	<h1 class="title">Sách viết về chủ tịch Hồ Chí Minh</h1>
+	<ul class="product-list">
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="chi_tiet_mot_quyen.html"><img src="./img_quanlysach/books (1).png" alt="">
+					</a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Chủ tịch Hồ Chí Minh với sự nghiệp giải phóng miền Nam thống nhất đất nước</a>
+						</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="">
+						<img src="./img_quanlysach/books (2).png" alt="">
+					</a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Hồ Chí Minh văn hóa soi đường cho dân đi</a>
+						</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="">
+						<img src="./img_quanlysach/books (3).png" alt="">
+					</a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Hồ Chí Minh sáng tạo, đổi mới</a>
+						</div>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="#" title=""><img src="./img_quanlysach/books (4).png" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Hồ Chí Minh con người của sự sống</a>
+					</div>
+				</div>
+			</li>
+	</ul>
+</div>
+<div class="contaniner">
+	<h1 class="title">Tạp chí khoa học việt nam</h1>
+	<ul class="product-list">
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="chi_tiet_mot_quyen.html"><img src="./img_quanlysach/b.png" alt="">
+					</a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Tạp chí khoa học công nghệ Việt Nam-B</a>
+						</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="">
+						<img src="./img_quanlysach/books (5).png" alt="">
+					</a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Tạp chí khoa học công nghệ Việt Nam-A</a>
+						</div>
+				</div>
+			</li>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="">
+						<img src="./img_quanlysach/book(6).png" alt="">
+					</a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Tạp chí thông tin và tư liệu</a>
+						</div>
+			<li class="tab-item-img col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="product ">
+					<a href="#" title=""><img src="./img_quanlysach/book (7).png" alt=""></a>
+					<div class="infor">
+							<a href="chi_tiet_mot_quyen.html">Vietnam journal of science technology and engineering</a>
+					</div>
+				</div>
+			</li>
+	</ul>
+</div>
+<section class="featured" id="featured">
+
+    <h1 class="heading">Sách hay tuyển chọn</h1>
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="./img_quanlysach/46.png" alt="">
+                </div>
+                
+                    <a href="chi_tiet_mot_quyen.html" ><h3>Thiết kế vị trí và mặt bằng trong hệ thống công nghiệp</h3></a>
+                
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="./img_quanlysach/47.png" alt="">
+                </div>
+               
+                    <a href="chi_tiet_mot_quyen.html"><h3>Xác suất và thống kê trong kỹ thuật và hệ thống công nghiệp</h3></a>
+             
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="./img_quanlysach/48.png" alt="">
+                </div>
+                
+                    <a href="chi_tiet_mot_quyen.html"><h3>Chuyển đổi số đến cốt lõi</h3></a>
+                
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="./img_quanlysach/49.png" alt="">
+                </div>
+               
+                    <a href="chi_tiet_mot_quyen.html"><h3>Ứng dụng internet vạn vật</h3></a>
+                
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="./img_quanlysach/50.png" alt="">
+                </div>
+                
+                 <a href="chi_tiet_mot_quyen.html"><h3>25 tình huống pháp luật với đời thường</h3></a>
+                
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="./img_quanlysach/51.png" alt="">
+                </div>
+                    <a href="chi_tiet_mot_quyen.html"><h3>Hiến pháp Mỹ</h3></a>
+            </div>
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="./img_quanlysach/52.png" alt="">
+                </div>
+                    <a href="chi_tiet_mot_quyen.html"><h3>Nghệ thuật quản lý con người</h3></a>
+            </div>
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="./img_quanlysach/53.png" alt="">
+                </div>
+                    <a href="chi_tiet_mot_quyen.html"><h3></h3>101 tình huống nhân sự nan giải</a>
+            </div>
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="./img_quanlysach/54.png" alt="">
+                </div>
+                    <a href="chi_tiet_mot_quyen.html"><h3>Kinh tế học ô quá dễ</h3></a>
+            </div>
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="./img_quanlysach/55.png" alt="">
+                </div>
+                    <a href="chi_tiet_mot_quyen.html"><h3>Làm quen kinh tế học qua biếm họa</h3></a>
+            </div>
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="./img_quanlysach/56.png" alt="">
+                </div>
+                    <a href="chi_tiet_mot_quyen.html"><h3>Tối đa hóa năng lực nhân viên</h3></a>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+<br><br><br>
+<footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>Thư viện GTVT là một trong những thư viện hàng đầu ở thành phố Hà Nội, với đầy đủ các tiêu chí, cơ sở vật chất hiện đại.</p>
+            <p>Bản quyền thuộc về Thư viện Đại học Giao Thông Vận Tải</p>
+            <div class="social">
+              <a href="#"><span style="color: white;" class="fab fa-facebook-f"></span></a>
+              <a href="#"><span style="color: white;" class="fab fa-twitter"></span></a>
+              <a href="#"><span style="color: white;" class="fab fa-instagram"></span></a>
+              <a href="#"><span style="color: white;" class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Số 3 Cầu Giấy, Đống Đa, Hà Nội</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+84xxxx5678</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">abc@utc.edu.com.vn</span>
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+          <h2>Contact us</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email</div>
+                <input style="color: white;" type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message</div>
+                <textarea style="color: white; " rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <input style="color: white;" type="submit" value="Send">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="web_quan_ly_sach.js"></script>
+</body>
+</html>	
